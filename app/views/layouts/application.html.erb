@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyPortfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+
+    <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-        <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
 
-       <% if current_user %>
-       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-      <% else %>
-       <%= link_to "Register", new_user_registration_path %>
-       <%= link_to "Sign In", new_user_registration_path %>
-       <% end %>
+  <h1>Allison you deleted the code here,  You need to resolve this later, something with the helper log-ons.  :-) </h1>
 
-    <%= yield %>
   </body>
 </html>
