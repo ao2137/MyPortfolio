@@ -14,8 +14,13 @@
   </head>
 
   <body>
-
   <h1>Allison you deleted the code here,  You need to resolve this later, something with the helper log-ons.  :-) </h1>
+
+  <%= yield %>
+
+  <% if session[:source] %>
+  <p>Thanks for visiting me from <%= session[:source] %></p>
+  <% end %>
 
   </body>
 </html>
